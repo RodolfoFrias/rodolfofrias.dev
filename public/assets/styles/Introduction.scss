@@ -1,3 +1,88 @@
 .intro {
     height: 100vh;
 }
+
+h1{
+    font-size: 50px !important;
+}
+
+p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.info_content {
+   margin-top: 5%;
+}
+
+.content-photo{
+    height: 100vh;
+    // display: flex;
+    // align-items: center;
+}
+
+.photo{
+    width: 350px;
+    height: 350px;
+    border-radius: 999px;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.technologies{
+    background-color: white;
+    margin: 0 20% 0 20%;
+    border-radius: 10px;
+}
+
+.technologies img{
+    width: 20%;
+    height: 20%;
+    margin: 0 2% 0 2%;
+}
+
+.joke {
+    font-size: 10px;
+    margin-top: 1%;
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+    .intro {
+        height: auto;
+    }    
+
+    h1{
+        font-size: 50px !important;
+    }
+    
+    p{
+        font-size: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+    }    
+  
+    .photo{
+        width: 200px;
+        height: 200px;
+        border-radius: 999px;
+        margin: auto;
+        margin-top: 10%;
+    }
+
+    .content-photo{
+        height: auto;
+    }
+
+    .technologies img{
+        width: 30%;
+        height: 30%;
+        margin: 0 1% 0 1%;
+    }
+}
