@@ -1,68 +1,57 @@
-#projects {
-    // height: 100vh;
-}
-
-#projects .item {
-    margin: 3% 1% 1% 1%;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px white;
-    cursor: pointer;
-    -moz-transform: translateX(0);
-    -moz-transition-duration: 0.3s;
-}
-
-.item:before{
-    content: '';
-    position: absolute;
-    width: 90%;
-    left: 5%;
-    top:100%;
-    height: 10px;
-
-    background: -moz-radial-gradient(
-        center, ellipse,
-        rgba(0,0,0,0.35) 0%,
-        rgba(0,0,0,0) 80%
-    );
-    -moz-transition-duration: 0.3s;
-    opacity: 0;
-}
-
-.item:hover{
-    -moz-transform: translateY(-7px) !important;
-}
-
-.item:hover:before{
-    -moz-transform: translateY(7px);
+.project {
+    overflow: scroll;
+    padding-left: 30px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .project__container {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 13% 0 5% 0;
+    padding-bottom: 10px;
+  }
+  
+  .project__container:hover .project-item {
+    opacity: 0.3;
+  }
+  
+  .project__container:hover .project-item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
     opacity: 1;
+  }
+
+  /* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 767px to 1024px
+*/
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  
+    .project__container {
+        margin-top: 20%;
+        margin-bottom: 10%;
+        padding-bottom: 10px;
+      }
+    
 }
+  
+  /* 
+  ##Device = Low Resolution Tablets, Mobiles (Portrait)
+  ##Screen = B/w 375px to 766px
+*/
 
-
-
-.social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
-}
-
-.social-link:hover, .social-link:focus {
-    background: #ddd;
-    text-decoration: none;
-    color: #555;
-}
-
-@media (min-width: 414px) and (max-width: 767px) {
-
-    #projects .item {
-        margin: 0 1% 0 1%;
-    }
-
-}
+@media (min-width: 375px) and (max-width: 766px) {
+  
+    .project__container {
+        margin-top: 40%;
+        margin-bottom: 20%;
+        padding-bottom: 10px;
+      }
+    
+  }
+  

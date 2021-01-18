@@ -48,6 +48,32 @@ p{
 }
 
 /* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .intro {
+        height: auto;
+    }  
+
+    .photo{
+        width: 220px;
+        height: 220px;
+        border-radius: 999px;
+        margin: auto;
+        margin-top: 50%;
+    }
+
+    .content-photo{
+        height: auto;
+    }
+
+   
+}
+
+/* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */

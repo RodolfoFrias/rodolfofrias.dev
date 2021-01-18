@@ -3,10 +3,10 @@ import '../../../public/assets/styles/Introduction.scss';
 
 const Introduction = () => (
     <section className="row justify-content-center intro" id="intro">
-        <div className="col-12 col-lg-5 text-center content-photo" >
+        <div className="col-12 col-md-4 col-lg-5 text-center content-photo" >
             <img className="photo" src='/public/assets/img/yo.jpg'  alt="" />
         </div>
-        <div className="col-12 col-lg-7 info_content ">
+        <div className="col-12 col-md-8  col-lg-7 info_content ">
             <div className="m-lg-5">
                 <h1 className="text-center">Hola, mi nombre es Rodolfo Frías</h1>
                 <hr/>

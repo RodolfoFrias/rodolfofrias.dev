@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
-const useInitialState = (API, CONFIG) => {
+const useInitialState = (API) => {
     const [ projects, setProjects ] = useState([]);
     useEffect(() => {
-        fetch(API, CONFIG)
+        fetch(API)
         .then(response => response.json())
         .then(data => setProjects(data));
     },[]);
