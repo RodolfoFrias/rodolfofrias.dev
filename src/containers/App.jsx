@@ -9,7 +9,6 @@ import Project from '../components/page/Project';
 import Contact from '../components/page/Contact';
 import Footer from '../components/page/Footer';
 
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
@@ -32,13 +31,16 @@ const App = () => {
             <Introduction/>
 
             <Categories title="Mis proyectos">
-                <Projects>
-                    {
-                        projects.map(item => 
-                            <Project key={item.objectId} {...item}/>
-                        )
-                    }
-                </Projects>
+                {
+                    projects.length === 0 ? <p>No ha proyectos disponibles</p>:
+                    <Projects>
+                        {
+                            projects.map(item => 
+                                <Project key={item.objectId} {...item}/>
+                            )
+                        }
+                    </Projects>
+                }
             </Categories>
             
 
