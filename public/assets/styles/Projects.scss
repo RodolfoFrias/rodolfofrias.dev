@@ -1,8 +1,10 @@
 .project {
-    overflow: scroll;
+    overflow-x: scroll;
     padding-left: 30px;
     width: 100%;
     position: relative;
+    scrollbar-color: rgba(0, 0, 0, 1) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
   }
   
   .project__container {

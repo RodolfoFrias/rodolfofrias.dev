@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../public/assets/styles/Contact.scss';
 
 const Contact = () => (
-    <section className="row shadow p-5" id="contact">
+    <section className="row p-5" id="contact">
         <div className="col-12">
             <h1 className="text-center my-5">Contáctame</h1>
             <form action="" method="post">

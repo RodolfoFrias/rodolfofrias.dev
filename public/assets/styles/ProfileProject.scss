@@ -1,0 +1,39 @@
+section{
+    p, h1, span, li{
+        color: white;
+    }
+}
+
+.profile{
+    background-image: linear-gradient(#000000, #464647);
+    height: 100vh;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.profile___img {
+    img{
+        width: 100%;
+        height: 100%;
+        margin: 20% 0 0 5%;
+    }
+   
+}
+
+.profile-col__content {
+    margin: 0 10% 0 10%;
+
+    p{
+        text-align: left;
+    }
+
+}
+
+.profile-resources, .profile-technologies{
+    margin-top: 5%;
+    ul{
+        padding: 1%;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../public/assets/styles/Header.scss';
 
 const Header = () => (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark header">
+    <nav className="navbar sticky-top navbar-expand-lg navbar-dark header">
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon text-dark"></span>
         </button>

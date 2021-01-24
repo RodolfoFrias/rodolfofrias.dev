@@ -8,7 +8,7 @@ const Introduction = () => (
         </div>
         <div className="col-12 col-md-8  col-lg-7 info_content ">
             <div className="m-lg-5">
-                <h1 className="text-center">Hola, mi nombre es Rodolfo Frías</h1>
+                <h1 className="text-center">Hola, mi nombre es Rodolfo Frías 💻</h1>
                 <hr/>
                 <p>
                     Soy desarrollador Javascript ubicado en Guanajuato, México, tengo
