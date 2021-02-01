@@ -13,11 +13,12 @@ const CONFIG = {
     headers: headers
 }
 
+const url = process.env.API_URL;
 
 const ProfileProject = () => {
     window.scrollTo(0,0);
     const { id } = useParams()
-    const API = 'http://localhost:1337/api/v1/projects/'+id;
+    const API = `${url}/projects/${id}`;
 
     const project = useGetProject(API, CONFIG);
   

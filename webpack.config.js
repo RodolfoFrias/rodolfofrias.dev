@@ -1,9 +1,15 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
+require('dotenv').config();
+
+module.exports = env => {
+  console.log('ENV', env.API_URL)
+  return {
     entry: './src/index.js',
+    // mode: process.env.ENV,
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -44,7 +50,18 @@ module.exports = {
                     }
                   }
                 ]
-              }
+              },
+              {
+                test: /\.svg$/,
+                use: [
+                  {
+                    loader: 'svg-url-loader',
+                    options: {
+                      limit: 10000,
+                    },
+                  },
+                ],
+              },
         ],
     },
     devServer: {  
@@ -58,5 +75,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'assets/[name].css',
         }),
+        new webpack.DefinePlugin({
+          'process.env.API_URL': JSON.stringify(env.API_URL)
+      })
     ],
+}
 }

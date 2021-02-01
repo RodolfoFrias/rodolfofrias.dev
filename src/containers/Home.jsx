@@ -13,7 +13,8 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import useProjects from '../hooks/useInitialState';
-const API = 'http://localhost:1337/api/v1/projects';
+const url = process.env.API_URL;
+const API = `${url}/projects`;
 const headers = new Headers();
 const CONFIG = {
     method: 'GET',
@@ -21,13 +22,14 @@ const CONFIG = {
 }
 
 const Home = () => {
+    console.log(process.env.API_URL)
     const projects = useProjects(API, CONFIG);
     return (
         <>
             <Introduction />
                 <Categories title="Mis proyectos">
                     {
-                        projects.length === 0 ? <p>No ha proyectos disponibles</p> :
+                        projects.length === 0 ? <p>No hay proyectos disponibles</p> :
                             <Projects>
                                 {
                                     projects.map(item =>

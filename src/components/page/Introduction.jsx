@@ -1,10 +1,15 @@
 import React from 'react';
 import '../../../public/assets/styles/Introduction.scss';
+import Angular from '../../../public/assets/img/technologies/Angular.png';
+import Express from '../../../public/assets/img/technologies/Expressjs.png';
+import Node from '../../../public/assets/img/technologies/Node.png';
+import Avatar from '../../../public/assets/img/avatar.png';
+
 
 const Introduction = () => (
     <section className="row justify-content-center intro" id="intro">
         <div className="col-12 col-md-4 col-lg-5 text-center content-photo" >
-            <img className="photo fade-in" src='/public/assets/img/avatar.png'  alt="" />
+            <img className="photo fade-in" src={Avatar}  alt="" />
             <p className="m-3 font-size-2">Los avatar los saqué de <a href="https:///getavataaars.com" alt="avatar" target="__blank">aquí</a></p>
         </div>
         <div className="col-12 col-md-8  col-lg-7 info_content fade-in">
@@ -22,9 +27,9 @@ const Introduction = () => (
                 </p>
             </div>
             <div className="technologies text-center">
-                <img src="/public/assets/img/technologies/Angular.png" alt=""/>
-                <img src="/public/assets/img/technologies/Expressjs.png" alt=""/>
-                <img src="/public/assets/img/technologies/Node.png" alt=""/>
+                <img src={Angular} alt=""/>
+                <img src={Express} alt=""/>
+                <img src={Node} alt=""/>
             </div>
             <p className="joke">Ya sé ya sé este sitio está hecho con el poderosisimo React...</p>
         </div>
