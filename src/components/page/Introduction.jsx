@@ -4,9 +4,10 @@ import '../../../public/assets/styles/Introduction.scss';
 const Introduction = () => (
     <section className="row justify-content-center intro" id="intro">
         <div className="col-12 col-md-4 col-lg-5 text-center content-photo" >
-            <img className="photo" src='/public/assets/img/yo.jpg'  alt="" />
+            <img className="photo fade-in" src='/public/assets/img/avatar.png'  alt="" />
+            <p className="m-3 font-size-2">Los avatar los saqué de <a href="https:///getavataaars.com" alt="avatar" target="__blank">aquí</a></p>
         </div>
-        <div className="col-12 col-md-8  col-lg-7 info_content ">
+        <div className="col-12 col-md-8  col-lg-7 info_content fade-in">
             <div className="m-lg-5">
                 <h1 className="text-center">Hola, mi nombre es Rodolfo Frías 💻</h1>
                 <hr/>
@@ -21,9 +22,9 @@ const Introduction = () => (
                 </p>
             </div>
             <div className="technologies text-center">
-                <img src="/public/assets/img/Angular.png" alt=""/>
-                <img src="/public/assets/img/Expressjs.png" alt=""/>
-                <img src="/public/assets/img/Node.png" alt=""/>
+                <img src="/public/assets/img/technologies/Angular.png" alt=""/>
+                <img src="/public/assets/img/technologies/Expressjs.png" alt=""/>
+                <img src="/public/assets/img/technologies/Node.png" alt=""/>
             </div>
             <p className="joke">Ya sé ya sé este sitio está hecho con el poderosisimo React...</p>
         </div>

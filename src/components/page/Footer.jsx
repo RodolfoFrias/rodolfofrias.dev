@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Footer = () => (
-    <section className="footer">
+    <section className="footer mt-5">
 
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <div className="row">
@@ -15,6 +15,10 @@ const Footer = () => (
                     <p className="">Linkedin</p>
                 </a>
                 <div className="footer-copyright text-center"> &copy; 2021 Rodolfo Frías:</div>
+                <p
+                 className="">The space theme was taken from <a href="https://www.salehriaz.com/"
+                  target="__blank">Salehriaz</a>
+                </p>
             </div>
         </div>
 

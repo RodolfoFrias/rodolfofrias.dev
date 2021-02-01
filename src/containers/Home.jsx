@@ -13,7 +13,7 @@ import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import useProjects from '../hooks/useInitialState';
-const API = 'http://localhost:1337/projects';
+const API = 'http://localhost:1337/api/v1/projects';
 const headers = new Headers();
 const CONFIG = {
     method: 'GET',
@@ -37,7 +37,7 @@ const Home = () => {
                             </Projects>
                     }
                 </Categories>
-            <Contact />
+            {/* <Contact /> */}
         </>
     )
 };

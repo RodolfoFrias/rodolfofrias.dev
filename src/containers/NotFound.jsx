@@ -1,25 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../public/assets/styles/NotFound.scss';
 
 const NotFound = () => (
     <section className="bg-purple">
         <div className="stars">
-            <div className="custom-navbar">
-                <div className="brand-logo">
-                    <img src="http://salehriaz.com/404Page/img/logo.svg" width="80px" />
-                </div>
-                <div className="navbar-links">
-                    <ul>
-                        <li><a href="http://salehriaz.com/404Page/404.html" target="_blank">Home</a></li>
-                        <li><a href="http://salehriaz.com/404Page/404.html" target="_blank">About</a></li>
-                        <li><a href="http://salehriaz.com/404Page/404.html" target="_blank">Features</a></li>
-                        <li><a href="http://salehriaz.com/404Page/404.html" className="btn-request" target="_blank">Request A Demo</a></li>
-                    </ul>
-                </div>
-            </div>
             <div className="central-body">
                 <img className="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px" />
-                <a href="http://salehriaz.com/404Page/404.html" className="btn-go-home" target="_blank">GO BACK HOME</a>
+                <Link to="/"  className="btn-go-home">
+                    REGRESAR
+                </Link>
             </div>
             <div className="objects">
                 <img className="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px" />

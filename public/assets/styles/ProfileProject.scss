@@ -5,7 +5,7 @@ section{
 }
 
 .profile{
-    background-image: linear-gradient(#000000, #464647);
+    // background-image: linear-gradient(#000000, #464647);
     height: 100vh;
 }
 
@@ -18,6 +18,7 @@ section{
         width: 100%;
         height: 100%;
         margin: 20% 0 0 5%;
+        border-radius: 10px;
     }
    
 }
@@ -36,4 +37,63 @@ section{
     ul{
         padding: 1%;
     }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .profile___img {
+        text-align: center;
+        img{
+            margin-top: 5%;
+            width: 80%;
+            height: 100%;
+        }
+    }
+
+    .profile-col__content {
+        margin: 20% 10% 0 10%;
+    
+        p{
+            text-align: left;
+        }
+    
+    }
+
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 375px) and (max-width: 767px) {
+    .profile___img {
+        text-align: center;
+        img{
+            width: 90%;
+            height: 90%;
+            // margin: 20% 5% 0 5%;
+            border-radius: 10px;
+        }
+    }
+
+    .profile-col__content {
+        margin: 20% 10% 0 10%;
+    
+        p{
+            text-align: left;
+        }
+    
+    }
+
+    .profile-technologies{
+        li{
+            font-size: 10px;
+        }
+    }
+
 }

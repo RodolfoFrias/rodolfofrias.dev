@@ -15,14 +15,16 @@ const CONFIG = {
 
 
 const ProfileProject = () => {
+    window.scrollTo(0,0);
     const { id } = useParams()
-    const API = 'http://localhost:1337/projects/'+id;
+    const API = 'http://localhost:1337/api/v1/projects/'+id;
 
     const project = useGetProject(API, CONFIG);
-    console.log(project)
+  
     const handleGoBack = () => {
         window.history.back();
     }
+
     return Object.keys(project).length > 0 ? (
         <section className="container-fluid profile">
             <div className="row p-3">
@@ -39,13 +41,13 @@ const ProfileProject = () => {
                     <div className="profile-col__content">
                         <h1>{project.name}</h1>
                         <div className="profile-full-description">
-                            <p>{project.full_description}</p>
+                            <p className="text-justify">{project.full_description}</p>
                         </div>
                         <div className="profile-technologies">
                             <span className="font-weight-bold">Tecnologías utilizadas</span>
                             <ul>
                                 {
-                                    project.technologies.map(item => 
+                                    project.technologies?.map(item => 
                                         <li key={item}>{item}</li>
                                     )
                                 }
