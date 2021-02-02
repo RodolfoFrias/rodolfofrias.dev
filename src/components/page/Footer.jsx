@@ -1,5 +1,10 @@
 import React from 'react';
 
+const divStyle = {
+    fontSize: '10px',
+ };
+  
+
 const Footer = () => (
     <section className="footer mt-5">
 
@@ -15,10 +20,10 @@ const Footer = () => (
                     <p className="">Linkedin</p>
                 </a>
                 <div className="footer-copyright text-center"> &copy; 2021 Rodolfo Frías:</div>
-                {/* <p
-                 className="">The space theme was taken from <a href="https://www.salehriaz.com/"
-                  target="__blank">Salehriaz</a>
-                </p> */}
+                <p style={divStyle}>
+                    The space theme was taken from <a href="https://www.salehriaz.com/"
+                    target="__blank">Saleh Riaz</a>
+                </p>
             </div>
         </div>
 

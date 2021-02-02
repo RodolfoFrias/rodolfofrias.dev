@@ -22,7 +22,6 @@ const CONFIG = {
 }
 
 const Home = () => {
-    console.log(process.env.API_URL)
     const projects = useProjects(API, CONFIG);
     return (
         <>
