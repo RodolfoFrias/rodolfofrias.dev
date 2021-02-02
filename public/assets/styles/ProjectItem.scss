@@ -61,3 +61,20 @@
     margin: 3px 0px;
     white-space: initial;
   }
+
+  @media (min-width: 350px) and (max-width: 766px) {
+  
+    .project-item {
+      margin-top: 5%;
+      width: 250px;
+      height: 250px;  
+    }
+    
+    .project-item:hover ~ .project-item {
+      -webkit-transform: translate3d(50px, 0, 0);
+              transform: translate3d(50px, 0, 0);
+    }
+    
+    
+  }
+  
