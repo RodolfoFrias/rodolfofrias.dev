@@ -5,6 +5,7 @@ import Home from '../containers/Home';
 import Login from '../containers/Login';
 import ProjectProfile from '../containers/ProfileProject';
 import NotFound from '../containers/NotFound';
+import Loader from '../components/shared/Loader';
 
 const App = () => (
     <BrowserRouter>

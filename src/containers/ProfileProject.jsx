@@ -4,7 +4,7 @@ import '../../public/assets/styles/ProfileProject.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-import NotFound from './NotFound';
+import Loader from '../components/shared/Loader';
 
 import useGetProject from '../hooks/useGetProject';
 const headers = new Headers();
@@ -65,7 +65,7 @@ const ProfileProject = () => {
                 </div>
             </div>
         </section>
-    ): <NotFound/>
+    ): <Loader/>
 };
 
 export default ProfileProject;
