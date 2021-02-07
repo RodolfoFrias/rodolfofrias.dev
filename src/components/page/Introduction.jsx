@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../public/assets/styles/Introduction.scss';
 import Angular from '../../../public/assets/img/technologies/Angular.png';
 import Express from '../../../public/assets/img/technologies/Expressjs.png';
-import Node from '../../../public/assets/img/technologies/Node.png';
+import Node from '../../../public/assets/img/technologies/node.png';
 import Avatar from '../../../public/assets/img/avatar.png';
 
 
