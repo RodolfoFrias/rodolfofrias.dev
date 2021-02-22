@@ -6,7 +6,7 @@ const Project = ({ objectId, name, description, picture, url }) => {
 
     return (
         <div className="project-item">
-            <Link to={`/${objectId}`}>
+            <Link to={`/project/${objectId}`}>
                 <img className="project-item__img" src={picture.url} alt={name} />
                 <div className="project-item__details">
                     <div>
