@@ -4,7 +4,7 @@ import '../../../public/assets/styles/Contact.scss';
 const Contact = () => (
     <section className="row p-5" id="contact">
         <div className="col-12">
-            <h1 className="text-center my-5">Contáctame</h1>
+            <h1 className="text-center my-5">Contact me</h1>
             <form action="" method="post">
                 <div className="row justify-content-around">
                     <div className="col-12 col-lg-4">

@@ -1,8 +1,5 @@
 import React from 'react';
 import '../../../public/assets/styles/Introduction.scss';
-import Angular from '../../../public/assets/img/technologies/Angular.png';
-import Express from '../../../public/assets/img/technologies/Expressjs.png';
-import Node from '../../../public/assets/img/technologies/node.png';
 import Avatar from '../../../public/assets/img/avatar.png';
 
 
@@ -13,11 +10,11 @@ const Introduction = () => (
         </div>
         <div className="col-12 info_content fade-in">
             <div className="">
-                <h1 className="text-center">Hola, mi nombre es Rodolfo Frías 💻</h1>
+                <h1 className="text-center">Hi there, my name is Rodolfo Frias 💻</h1>
                 <hr/>
                 <p className="text-center">
-                   Soy desarrollador backend, me encanta programar y hacer cosas geniales con
-                   las nuevas tecnologías. Nunca parar de aprender
+                   Hey i'm Rodolfo a software engineer based on Guanajuato, Mexico, i love programming
+                   and do fun stuff with new technologies. Eager to learn!
                 </p>
             </div>
         </div>

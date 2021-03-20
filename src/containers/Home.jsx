@@ -27,7 +27,7 @@ const Home = () => {
     return (
         <>
             <Introduction />
-                <Categories title="Mis proyectos">
+                <Categories title="My projects">
                     {
                         projects.length === 0 ? 
                             <Loader/>

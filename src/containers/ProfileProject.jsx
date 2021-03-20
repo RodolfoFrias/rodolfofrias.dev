@@ -31,7 +31,7 @@ const ProfileProject = () => {
             <div className="row p-3">
                 <div className="pointer" onClick={handleGoBack}>
                     <FontAwesomeIcon icon={faArrowLeft} />
-                    <span className="ml-2">Regresar</span>
+                    <span className="ml-2">Go back</span>
                 </div>
             </div>
             <div className="row ">
@@ -45,7 +45,7 @@ const ProfileProject = () => {
                             <p className="text-justify">{project.full_description}</p>
                         </div>
                         <div className="profile-technologies">
-                            <span className="font-weight-bold">Tecnologías utilizadas</span>
+                            <span className="font-weight-bold">Used technologies</span>
                             <ul>
                                 {
                                     project.technologies?.map(item => 
@@ -55,10 +55,10 @@ const ProfileProject = () => {
                             </ul>
                         </div>
                         <div className="profile-resources">
-                            <span className="font-weight-bold">Recursos</span>
+                            <span className="font-weight-bold">Resources</span>
                             <ul>
-                                <li> <a href={project.url} target="__blank">Ir a la página</a> </li>
-                                <li> <a href={project.repo} target="__blank">Ver en Github</a> </li>
+                                <li> <a href={project.url} target="__blank">View</a> </li>
+                                <li> <a href={project.repo} target="__blank">Github</a> </li>
                             </ul>
                         </div>
                     </div>
