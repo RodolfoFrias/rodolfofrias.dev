@@ -9,10 +9,6 @@ const Project = ({ objectId, name, description, picture, url }) => {
             <Link to={`/project/${objectId}`}>
                 <img className="project-item__img" src={picture.url} alt={name} />
                 <div className="project-item__details">
-                    <div>
-                        {/* <img className="project-item__details--img" src="" alt="Play Icon" />
-                    <img className="project-item__details--img" src="" alt="Plus Icon" /> */}
-                    </div>
                     <p className="project-item__details--title">{name}</p>
                     <p className="project-item__details--subtitle">
                         {description}
