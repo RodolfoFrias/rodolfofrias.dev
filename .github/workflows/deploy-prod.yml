@@ -3,7 +3,7 @@ name: Deploy to prod
 on:
   push:
     branches: [ master ]
-  pull-request:
+  pull_request:
     types: [ closed ]
 
 jobs:
