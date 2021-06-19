@@ -13,14 +13,15 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Set-up Node.js ${{ matrix.node-version }} and build 🔧
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install
-      - run: npm run test --if-present
-      - run: npm run build --if-present
+      - run: |
+          npm install
+          npm run test --if-present
+          npm run build --if-present
       - name: Deploy to prod  🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
