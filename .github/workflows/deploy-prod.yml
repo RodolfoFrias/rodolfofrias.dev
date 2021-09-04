@@ -10,6 +10,7 @@ jobs:
   Deploy-to-prod:
 
     runs-on: ubuntu-latest
+    environment: github-pages
 
     steps:
       - name: Checkout 🛎️
@@ -22,6 +23,8 @@ jobs:
           npm install
           npm run test --if-present
           npm run build --if-present
+      - env:
+          API_URL: ${{ secrets.API_URL }}
       - name: Deploy to prod  🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:

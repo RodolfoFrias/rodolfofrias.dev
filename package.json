@@ -5,7 +5,7 @@
   "description": "Frontend of my portfolio",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production --env API_URL=https://backend-parse-portfolio.herokuapp.com/api/v1",
+    "build": "dotenv -- cross-var webpack --mode production --env API_URL=%API_URL%",
     "start": "webpack serve --mode development --env development --env API_URL=http://localhost:1337/api/v1",
     "deploy": "gh-pages -d dist"
   },
@@ -38,8 +38,11 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "cross-var": "^1.1.0",
     "css-loader": "^5.0.1",
     "dotenv": "^8.2.0",
+    "dotenv-cli": "^4.0.0",
     "file-loader": "^6.2.0",
     "gh-pages": "^3.1.0",
     "html-loader": "^1.3.2",
