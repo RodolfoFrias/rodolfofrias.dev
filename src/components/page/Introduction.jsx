@@ -13,8 +13,8 @@ const Introduction = () => (
                 <h1 className="text-center">Hi there, my name is Rodolfo Frias 💻</h1>
                 <hr/>
                 <p className="text-center">
-                   Hey i'm Rodolfo a software engineer based on Guanajuato, Mexico, i love programming
-                   and do fun stuff with new technologies. Eager to learn!
+                   Hey I'm Rodolfo a software engineer based on Guanajuato, Mexico, I love programming
+                   and do fun stuff with new technologies. I'm Eager to learn!
                 </p>
             </div>
         </div>
