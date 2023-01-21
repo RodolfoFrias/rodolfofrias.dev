@@ -1,13 +1,13 @@
-import React from "react";
-import "../../../public/assets/styles/Loader.scss";
+import React from 'react';
+import '../../../public/assets/styles/Loader.scss';
 
 const Loader = () => (
-  <div className="loader__container">
-    <div className="loader__content">
-      <div className="spinner-grow text-center loader" role="status">
+  <div className='loader__container'>
+    <div className='loader__content'>
+      <div className='spinner-grow text-center loader' role='status'>
         {/* <span className="sr-only">Loading...</span> */}
       </div>
-      <p className="mt-5">Cargando...</p>
+      <p className='mt-5'>Cargando...</p>
     </div>
   </div>
 );

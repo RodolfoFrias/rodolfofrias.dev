@@ -8,17 +8,17 @@ import Admin from '../containers/Admin';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
-    <BrowserRouter>
-        <Layout>
-            <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/project/:id" component={ProjectProfile} />
-                <Route exact path="/dashboard" component={Admin} />
-                <Route component={NotFound}/>
-            </Switch> 
-        </Layout>
-    </BrowserRouter>
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/project/:id' component={ProjectProfile} />
+        <Route exact path='/dashboard' component={Admin} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  </BrowserRouter>
 );
 
 export default App;
