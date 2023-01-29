@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../public/assets/styles/Introduction.scss';
-import Avatar from '../../../public/assets/img/avatar.png';
+import Avatar from '../../../public/assets/img/BittMen.png';
 
 const Introduction = () => (
   <section className='row justify-content-center intro m-0 p-0' id='intro'>
@@ -12,8 +12,11 @@ const Introduction = () => (
         <h1 className='text-center'>Hi there, my name is Rodolfo Frias 💻</h1>
         <hr />
         <p className='text-center'>
-          Hey I'm Rodolfo a software engineer based in Guanajuato, Mexico, I love programming
+          Hey I'm a software engineer based in Guanajuato, Mexico, I love programming
           and do fun stuff with new technologies. I'm Eager to learn!
+        </p>
+        <p>
+          Recently learning Apache Kafka, VueJS and NestJS
         </p>
       </div>
     </div>

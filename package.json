@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "dotenv -- cross-var webpack --mode production --env API_URL=%API_URL%",
-    "start": "webpack serve --mode development --env development --env API_URL=http://localhost:1337/api/v1",
+    "start": "webpack serve --mode development --env development --env API_URL=http://localhost:8080/public/assets/projects.json",
     "deploy": "gh-pages -d dist"
   },
   "author": "Rodolfo Frías",
@@ -15,6 +15,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^1.2.6",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^4.5.3",
     "eslint": "^7.17.0",

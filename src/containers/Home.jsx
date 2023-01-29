@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../public/assets/styles/app.scss';
 
-import Popper from 'popper.js';
-import $ from 'jquery';
 import Introduction from '../components/page/Introduction';
 import Categories from '../components/page/Categories';
 import Projects from '../components/page/Projects';
@@ -16,32 +14,30 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import useProjects from '../hooks/useInitialState';
 
 const url = process.env.API_URL;
-const API = `${url}/projects`;
+const API = `${url}`;
 const headers = new Headers();
 const CONFIG = {
-  method: 'GET',
-  headers,
+  'method': 'GET',
+  'headers': headers,
 };
 
 const Home = () => {
-  // TODO set different endpoint
-//   const projects = useProjects(API, CONFIG);
+  const projects = useProjects(API, CONFIG);
   return (
     <>
       <Introduction />
-      <p>This page is in maintenance..</p>
-      {/* <Categories title='My projects'>
+      <Categories title='My projects'>
         {
           projects.length === 0 ?
             <Loader /> : (
               <Projects>
                 {
-                  projects.map((item) => <Project key={item.objectId} {...item} />)
+                  projects.map((item) => <Project key={item.id} {...item} />)
                 }
               </Projects>
             )
         }
-      </Categories> */}
+      </Categories>
       {/* <Contact /> */}
     </>
   );

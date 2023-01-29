@@ -19,9 +19,9 @@ const url = process.env.API_URL;
 const ProfileProject = () => {
   window.scrollTo(0, 0);
   const { id } = useParams();
-  const API = `${url}/projects/${id}`;
+  const API = `${url}`;
 
-  const project = useGetProject(API, CONFIG);
+  const project = useGetProject(API, CONFIG, id);
 
   const handleGoBack = () => {
     window.history.back();
@@ -37,13 +37,13 @@ const ProfileProject = () => {
       </div>
       <div className='row '>
         <div className='col-sm-12 col-lg-4  profile___img'>
-          <img src={project.picture.url} alt='' />
+          <img src={project.image_url} alt='' />
         </div>
         <div className='col-sm-12 col-lg-8'>
           <div className='profile-col__content'>
             <h1>{project.name}</h1>
             <div className='profile-full-description'>
-              <p className='text-justify'>{project.full_description}</p>
+              <p className='text-justify'>{project.extended_description}</p>
             </div>
             <div className='profile-technologies'>
               <span className='font-weight-bold'>Used technologies</span>
@@ -58,12 +58,12 @@ const ProfileProject = () => {
               <ul>
                 <li>
                   {' '}
-                  <a href={project.url} target='__blank'>View</a>
+                  <a href={project.project_url} className='external_link__a' target='__blank'>View</a>
                   {' '}
                 </li>
                 <li>
                   {' '}
-                  <a href={project.repo} target='__blank'>Github</a>
+                  <a href={project.repo_url} className='external_link__a' target='__blank'>Github</a>
                   {' '}
                 </li>
               </ul>
