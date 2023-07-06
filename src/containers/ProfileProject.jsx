@@ -30,12 +30,12 @@ const ProfileProject = () => {
   return Object.keys(project).length > 0 ? (
     <section className='container-fluid profile'>
       <div className='row p-3'>
-        <div className='pointer' onClick={handleGoBack}>
+        <div className='pointer' onClick={handleGoBack} role='link' tabIndex={0}>
           <FontAwesomeIcon icon={faArrowLeft} />
           <span className='ml-2'>Go back</span>
         </div>
       </div>
-      <div className='row '>
+      <div className='row'>
         <div className='col-sm-12 col-lg-4  profile___img'>
           <img src={project.image_url} alt='' />
         </div>

@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../../public/assets/styles/ProjectItem.scss';
 
-const Project = ({ id, name, description, image_url }) => {
-
+const Project = ({ details }) => {
+  const { id, name, description, image_url } = details;
   return (
     <div className='project-item'>
       <Link to={`/project/${id}`}>

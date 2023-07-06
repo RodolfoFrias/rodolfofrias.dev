@@ -5,7 +5,7 @@
             "name": "Portfolio",
             "description": "My web portfolio where I show some of the projects I have created as a backend engineer",
             "extended_description": "Here I show some of the projects I have created, all of them as side projects that I work on during my free time. This web was created using ReactJS which I decided to use in order to learn it c:",
-            "image_url": "/public/assets/img/projects/portfolio.PNG",
+            "image_url": "/assets/img/projects/portfolio.PNG",
             "project_url": "https://rodolfofrias.dev",
             "repo_url": "https://github.com/RodolfoFrias/rodolfofrias.dev",
             "technologies": [

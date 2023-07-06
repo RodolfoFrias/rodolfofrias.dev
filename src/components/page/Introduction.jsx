@@ -16,7 +16,7 @@ const Introduction = () => (
           and do fun stuff with new technologies. I'm Eager to learn!
         </p>
         <p>
-          Recently learning Apache Kafka, VueJS and NestJS
+          Currently learning Apache Kafka, VueJS and NestJS
         </p>
       </div>
     </div>

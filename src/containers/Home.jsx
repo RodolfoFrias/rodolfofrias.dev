@@ -32,7 +32,7 @@ const Home = () => {
             <Loader /> : (
               <Projects>
                 {
-                  projects.map((item) => <Project key={item.id} {...item} />)
+                  projects.map((item) => <Project key={item.id} details={item} />)
                 }
               </Projects>
             )

@@ -5,80 +5,80 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 require('dotenv').config();
 
-module.exports = env => {
-  console.log('ENV', env.API_URL)
+module.exports = (env) => {
+  console.log('ENV', env.API_URL);
   return {
     entry: './src/index.js',
     // mode: process.env.ENV,
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/'
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'bundle.js',
+      publicPath: '/',
     },
     resolve: {
-        extensions: ['.js', '.jsx'],
+      extensions: ['.js', '.jsx'],
     },
     module: {
-        rules: [
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+          },
+        },
+        {
+          test: /\.html$/,
+          use: {
+            loader: 'html-loader',
+          },
+        },
+        {
+          test: /\.(s*)css$/,
+          use: [
+            { loader: MiniCssExtractPlugin.loader },
+            'css-loader',
+            'sass-loader',
+          ],
+        },
+        {
+          test: /\.(pdf|png|gif|jpg)$/,
+          use: [
             {
-              test: /\.(js|jsx)$/,
-              exclude: /node_modules/,
-              use: {
-                loader: 'babel-loader',
+              'loader': 'file-loader',
+              options: {
+                name: 'assets/[hash].[ext]',
               },
             },
+          ],
+        },
+        {
+          test: /\.svg$/,
+          use: [
             {
-              test: /\.html$/,
-              use: {
-                loader: 'html-loader',
+              loader: 'svg-url-loader',
+              options: {
+                limit: 10000,
               },
             },
-            {
-                test: /\.(s*)css$/,
-                use: [
-                  { loader: MiniCssExtractPlugin.loader },
-                  'css-loader',
-                  'sass-loader',
-                ],
-              }, 
-              {
-                test: /\.(pdf|png|gif|jpg)$/,
-                use: [
-                  {
-                    'loader': 'file-loader',
-                    options: {
-                      name: 'assets/[hash].[ext]'
-                    }
-                  }
-                ]
-              },
-              {
-                test: /\.svg$/,
-                use: [
-                  {
-                    loader: 'svg-url-loader',
-                    options: {
-                      limit: 10000,
-                    },
-                  },
-                ],
-              },
-        ],
+          ],
+        },
+      ],
     },
-    devServer: {  
-      historyApiFallback: true,  
+    devServer: {
+      historyApiFallback: true,
     },
     plugins: [
-        new HtmlWebpackPlugin({
-          template: './public/index.html',
-          filename: './index.html',
-        }),
-        new MiniCssExtractPlugin({
-            filename: 'assets/[name].css',
-        }),
-        new webpack.DefinePlugin({
-          'process.env.API_URL': JSON.stringify(env.API_URL)
-      })
+      new HtmlWebpackPlugin({
+        template: './public/index.html',
+        filename: './index.html',
+      }),
+      new MiniCssExtractPlugin({
+        filename: 'assets/[name].css',
+      }),
+      new webpack.DefinePlugin({
+        'process.env.API_URL': JSON.stringify(env.API_URL),
+      }),
     ],
-}
-}
+  };
+};
