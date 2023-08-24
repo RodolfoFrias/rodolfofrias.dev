@@ -16,8 +16,8 @@ const fetchProjects = () => {
         if (res.error) {
           throw (res.error);
         }
-        dispatch(fetchProjectsSuccess(res.products));
-        return res.products;
+        dispatch(fetchProjectsSuccess(res.projects));
+        return res.projects;
       })
       .catch((error) => {
         dispatch(fetchProjectsError(error));
