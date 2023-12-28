@@ -5,7 +5,6 @@ import Introduction from '../components/page/Introduction';
 import Categories from '../components/page/Categories';
 import Projects from '../components/page/Projects';
 import Project from '../components/page/Project';
-import Contact from '../components/page/Contact';
 import Loader from '../components/shared/Loader';
 
 import 'bootstrap/dist/css/bootstrap.min.css';

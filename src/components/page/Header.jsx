@@ -1,5 +1,4 @@
 import React from 'react';
-import Curriculum from '../../../public/assets/docs/Rodolfo_Frias_CV.pdf';
 import '../../../public/assets/styles/Header.scss';
 
 const Header = () => (
@@ -15,7 +14,6 @@ const Header = () => (
         </a>
         <a className='nav-item nav-link js-scroll-trigger' href='#projects'>Projects</a>
         <a className='nav-item nav-link js-scroll-trigger' href='mailto:rodofriaslugo@gmail.com'>Contact</a>
-        {/* <a className='nav-item nav-link js-scroll-trigger' href={Curriculum} download='RodolfoFriasCV'>Curriculum</a> */}
       </div>
     </div>
   </nav>
